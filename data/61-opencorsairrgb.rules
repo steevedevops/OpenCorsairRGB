@@ -1,0 +1,7 @@
+# OpenCorsairRGB: acesso de usuario aos dispositivos de iluminacao
+# COLORFUL ARGB header e display GAMDIAS CHIONE (USB HID)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="2f4c", ATTRS{idProduct}=="1000", TAG+="uaccess", MODE="0660", GROUP="plugdev"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1b80", ATTRS{idProduct}=="b53c", TAG+="uaccess", MODE="0660", GROUP="plugdev"
+# SMBus da placa-mae (RAM Corsair) e barramentos i2c da placa de video NVIDIA (ASUS ENE)
+KERNEL=="i2c-[0-9]*", ATTR{name}=="SMBus PIIX4 adapter port 0*", TAG+="uaccess"
+KERNEL=="i2c-[0-9]*", ATTR{name}=="NVIDIA i2c adapter*", TAG+="uaccess"

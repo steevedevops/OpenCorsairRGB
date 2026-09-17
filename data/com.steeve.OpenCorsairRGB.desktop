@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=OpenCorsairRGB
+GenericName=Controle de iluminação RGB
+Comment=Troque a cor dos fans ARGB e da memória RAM
+Exec=opencorsairrgb
+Icon=com.steeve.OpenCorsairRGB
+Terminal=false
+Categories=Settings;HardwareSettings;Utility;
+Keywords=rgb;led;fan;cooler;ram;memoria;cor;iluminacao;
+StartupWMClass=com.steeve.OpenCorsairRGB
